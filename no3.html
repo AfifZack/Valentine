@@ -26,12 +26,14 @@
 
         <div class="btn">
             <a href="yes.html">Yes</a>
-            <a href="" id="noButton">No</a>
+            <a href="#" id="noButton">No</a> <!-- Changed href="" to href="#" -->
         </div>
     </div>
 
     <script>
-        document.getElementById("noButton").addEventListener("click", function () {
+        document.getElementById("noButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Stop the link from refreshing the page
+
             const button = this;
             const newX = Math.random() * (window.innerWidth - button.clientWidth);
             const newY = Math.random() * (window.innerHeight - button.clientHeight);
