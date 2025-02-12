@@ -1,11 +1,11 @@
-/* Importing Great Vibes font */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* Importing Dancing Script font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Great Vibes', cursive; /* Applied Great Vibes font */
+    font-family: 'Dancing Script', cursive, sans-serif; /* Applied to everything */
 }
 
 body {
@@ -15,45 +15,56 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #A07856; /* Updated background color */
+    text-align: center;
 }
 
+/* Make headings stand out */
+h1 {
+    font-size: 50px; /* Bigger for elegance */
+    font-weight: 700; /* Bolder for visibility */
+}
+
+/* Container Styling */
 .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    gap: 20px;
-    max-width: 500px;
+    gap: 30px;
+    max-width: 600px;
     margin: 20px;
 }
 
+/* Make GIF larger */
 .container .tenor-gif-embed {
-    max-width: 200px;
+    max-width: 250px;
 }
 
+/* Button Styling */
 .container .btn {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
+/* Bigger, elegant buttons */
 .btn a {
     text-decoration: none;
-    color: #fff; /* White text for better contrast */
-    padding: 10px 25px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-size: 28px; /* Bigger and more stylish */
+    font-weight: 600;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
-    font-size: 20px; /* Slightly larger for elegance */
 }
 
 /* Warm beige button for "Yes" */
 .btn a:first-child {
-    background: #D9B382; /* Beige */
+    background: #D9B382;
 }
 
 /* Deep brown button for "No" */
 .btn a:last-child {
-    background: #603813; /* Deep brown */
+    background: #603813;
 }
 
 /* Button hover effect */
