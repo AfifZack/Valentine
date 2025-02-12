@@ -6,44 +6,9 @@
     <title>Deena Penguin <3</title>
     
     <link rel="stylesheet" href="./style.css"/>
-    <style>
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #preloader button {
-            padding: 10px 20px;
-            font-size: 18px;
-            background: pink;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
-    <div id="preloader">
-        <p>Click below to enter and enable music</p>
-        <button onclick="startSite()">Enter Site</button>
-    </div>
-
-    <audio id="backgroundMusic" loop>
-        <source src="aufey - Valentine (Official Audio) [tyKu0uZS86Q].mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <div class="container" style="display: none;" id="mainContent">
+    <div class="container">
         <div class="tenor-gif-embed"
             data-postid="24105461" 
             data-share-method="host" 
@@ -64,20 +29,5 @@
         </div>
     </div>
 
-    <script>
-        const audio = document.getElementById("backgroundMusic");
-        const mainContent = document.getElementById("mainContent");
-        const preloader = document.getElementById("preloader");
-
-        function startSite() {
-            preloader.style.display = "none";
-            mainContent.style.display = "block";
-            audio.play().then(() => {
-                console.log("Audio is playing");
-            }).catch((error) => {
-                console.error("Failed to play audio.", error);
-            });
-        }
-    </script>
 </body>
 </html>
