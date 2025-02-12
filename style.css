@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe5e5;
+    background-color: #A07856; /* Updated background color */
 }
 
 .container {
@@ -24,14 +24,14 @@ body {
     margin: 20px;
 }
 
-    .container .tenor-gif-embed {
-        max-width: 200px;
-    }
+.container .tenor-gif-embed {
+    max-width: 200px;
+}
 
-    .container .btn {
-        display: flex;
-        gap: 25px;
-    }
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
 
 .btn a {
     text-decoration: none;
@@ -42,17 +42,17 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-    /* Green button for "Yes" */
-    .btn a:first-child {
-        background: #28a745; /* Green */
-    }
+/* Warm beige button for "Yes" */
+.btn a:first-child {
+    background: #D9B382; /* Beige */
+}
 
-    /* Red button for "No" */
-    .btn a:last-child {
-        background: #dc3545; /* Red */
-    }
+/* Deep brown button for "No" */
+.btn a:last-child {
+    background: #603813; /* Deep brown */
+}
 
-    /* Button hover effect */
-    .btn a:hover {
-        opacity: 0.8;
-    }
+/* Button hover effect */
+.btn a:hover {
+    opacity: 0.8;
+}
